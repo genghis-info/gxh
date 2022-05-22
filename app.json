@@ -1,0 +1,19 @@
+{
+  "name": "XTLS/Xray",
+  "description": "Deploy Xray to Heroku",
+  "repository": "https://github.com/genghis-info/gxh",
+  "logo": "https://avatars.githubusercontent.com/u/71564206?s=200&v=4",
+  "keywords": [
+    "go",
+    "xtls",
+    "xray"
+  ],
+  "env": {
+    "XRAY_CONFIG": {
+      "description": "The base64-encoded config file for xray",
+      "required": true,
+      "generator": "secret"
+    }
+  },
+  "stack": "container"
+}
