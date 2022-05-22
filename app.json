@@ -11,8 +11,7 @@
   "env": {
     "XRAY_CONFIG": {
       "description": "The base64-encoded config file for xray",
-      "required": true,
-      "generator": "secret"
+      "required": true
     }
   },
   "stack": "container"
