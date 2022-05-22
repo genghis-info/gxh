@@ -9,6 +9,6 @@ COPY *.sh ./
 
 RUN chmod +x ./*.sh && ./install-release.sh
 
-ENTRYPOINT [ "tini", "-g", "--" ]
+ENTRYPOINT [ "tini", "-g", "-s", "--" ]
 
 CMD [ "./start-xray.sh" ]
